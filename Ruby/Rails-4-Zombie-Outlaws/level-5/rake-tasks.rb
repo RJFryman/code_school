@@ -1,0 +1,3 @@
+# After
+
+rake test:models
