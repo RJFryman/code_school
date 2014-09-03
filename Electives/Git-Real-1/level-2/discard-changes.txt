@@ -1,0 +1,1 @@
+git checkout -- cats.html index.html

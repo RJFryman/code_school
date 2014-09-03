@@ -1,0 +1,40 @@
+# Before
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Our Cat-alog</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+<<<<<<< HEAD
+        <li><a href="cat.html">Cats</a></li>
+        <li><a href="dog.html">Dogs</a></li>
+=======
+        <li><a href="cat.html">Felines</a></li>
+        <li><a href="dog.html">Canines</a></li>
+>>>>>>> 6a487f9eb0e0a5110bdf2a45a4f5dbcc3d4eec53
+      </ul>
+    </nav>
+  </body>
+</html>
+
+# After
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Our Cat-alog</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="cat.html">Cats</a></li>
+        <li><a href="dog.html">Dogs</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
