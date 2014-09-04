@@ -1,0 +1,3 @@
+[submodule "Electives/Mastering-GitHub/dojo_rules"]
+	path = Electives/Mastering-GitHub/dojo_rules
+	url = git://github.com/rjfryman/dojo_rules.git

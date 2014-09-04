@@ -1,0 +1,1 @@
+git remote add upsteam https://github.com/deadlyvipers/dojo_rules.git
