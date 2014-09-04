@@ -1,0 +1,1 @@
+git filter-branch --tree-filter 'rm -f master_password.txt' -- --all

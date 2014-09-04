@@ -1,0 +1,21 @@
+# Before
+
+*     text=auto
+*.rb text
+*.js text
+
+*.bat text eol=
+*.sh text eol=
+
+*.png binary
+
+# After
+
+*     text=auto
+*.rb text
+*.js text
+
+*.bat text eol=crlf
+*.sh text eol=lf
+
+*.png binary
