@@ -1,0 +1,64 @@
+# Before
+
+<script>
+  var clientId = '720409271749-hqv3lb4u0q82t68vperem5oi3kosskol.apps.googleusercontent.com';
+  var developerKey = 'AIzaSyBTEWsJ4aXdoOzB4ey81eX9-ja7HejL4Qc';
+  var accessToken;
+  function onApiLoad() {
+    gapi.load('auth', authenticateWithGoogle);
+    gapi.load('picker');
+  }
+  function authenticateWithGoogle() {
+    window.gapi.auth.authorize({
+      'client_id': clientId,
+      'scope': ['https://www.googleapis.com/auth/drive']
+    }, handleAuthentication);
+  }
+  function handleAuthentication(result) {
+    if(result && !result.error) {
+      accessToken = result.access_token;
+      setupPicker();
+    }
+  }
+  function setupPicker() {
+    var picker = new google.picker.PickerBuilder()
+      .setOAuthToken(accessToken)
+      .setDeveloperKey(developerKey)
+      .build();
+    picker.setVisible(true);
+  }
+</script>
+<script src="https://apis.google.com/js/api.js?onload=onApiLoad"></script>
+
+# After
+
+<script>
+  var clientId = '720409271749-hqv3lb4u0q82t68vperem5oi3kosskol.apps.googleusercontent.com';
+  var developerKey = 'AIzaSyBTEWsJ4aXdoOzB4ey81eX9-ja7HejL4Qc';
+  var accessToken;
+  function onApiLoad() {
+    gapi.load('auth', authenticateWithGoogle);
+    gapi.load('picker');
+  }
+  function authenticateWithGoogle() {
+    window.gapi.auth.authorize({
+      'client_id': clientId,
+      'scope': ['https://www.googleapis.com/auth/drive']
+    }, handleAuthentication);
+  }
+  function handleAuthentication(result) {
+    if(result && !result.error) {
+      accessToken = result.access_token;
+      setupPicker();
+    }
+  }
+  function setupPicker() {
+    var picker = new google.picker.PickerBuilder()
+      .setOAuthToken(accessToken)
+      .setDeveloperKey(developerKey)
+      .addView(new google.picker.DocsUploadView())
+      .build();
+    picker.setVisible(true);
+  }
+</script>
+<script src="https://apis.google.com/js/api.js?onload=onApiLoad"></script>

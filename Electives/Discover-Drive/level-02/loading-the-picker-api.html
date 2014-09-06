@@ -1,0 +1,16 @@
+# Before
+
+<script>
+
+</script>
+<script src="https://apis.google.com/js/api.js?onload=onApiLoad"></script>
+
+# After
+
+<script>
+function onApiLoad() {
+gapi.load('auth');
+gapi.load('picker');
+}
+</script>
+<script src="https://apis.google.com/js/api.js?onload=onApiLoad"></script>
