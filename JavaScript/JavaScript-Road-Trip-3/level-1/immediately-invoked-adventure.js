@@ -1,0 +1,3 @@
+// After
+
+adventureSelector(3)();

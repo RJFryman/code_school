@@ -1,0 +1,3 @@
+// After
+
+alert(fearGenerated);
